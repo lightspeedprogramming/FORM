@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>	<title>FORM</title>	</head>
+	
+	<body>
+		<form method="post" action="output.php">
+			<table border="1">
+				<tr>
+					<td>Enter your First Name</td>
+					<td><input type="text" title="enter your first name" 
+							   placeholder="enter your first name"
+							   size="30"
+							   maxlength="20"
+							   required
+							   name="fn"/
+							   pattern="[a-z]{1,10}">(*)
+					</td>
+				</tr>
+				<!--enter your last name input field-->
+				<tr>
+					<td>Enter your Last Name</td>
+					<td>
+						<input
+							type="text"
+							name="Ln"
+							maxlength="20"
+							required
+							size="30"
+							placeholder="enter your last name"
+							title="enter your last name"
+						/>
+					</td>
+				</tr>
+				<!--enter your email input field-->
+				<tr>
+					<td>Enter your e-mail</td>
+					<td>
+						<input
+							type="email"
+							name="email"
+							size="30"
+							placeholder="enter your e-mail"
+							title="enter your e-mail"
+						/>
+					</td>
+				</tr>
+				<!--enter your passw input field-->
+				<tr>
+					<td>Enter your password</td>
+					<td>
+						<input 
+							type="password"
+							name="password"
+							placeholder="enter your password"
+							title="enter your password"
+							size="40"
+						/>
+					</td>
+				</tr>
+				<!--enter your mobile no-->
+				<tr>
+					<td>Enter your mobile</td>
+					<td>
+						<input 
+							type="number" min="0" size="40" 
+								required="true" pattern=[0-8]/>
+					</td>
+				</tr>
+				<!--enter your website url-->
+				<tr>
+					<td>Enter your website URL</td>
+					<td>
+						<input
+							type="url"
+							name="url"
+							placeholder="enter your URL"
+							title="enter URL"
+							required
+							size="30"
+						/>
+					</td>
+				</tr>
+				<!--select your color input field-->
+				<tr>
+					<td>Select your favourite color</td>
+					<td>
+						<input type="color" size="20" />
+					</td>
+				</tr>
+				<!--profile pic input field-->
+				<tr>
+					<td>Enter your Profile Pic</td>
+					<td>
+						<input type="file"/>
+					</td>
+				</tr>
+				<!--address input field-->
+				<tr>
+					<td>Enter your address</td>
+					<td>
+						<textarea cols="20" rows="10"></textarea>
+					</td>
+				</tr>
+				<!--select gender input field-->
+				<tr>
+					<td>select your gender</td>
+					<td>
+						Male<input type="radio" name="gender" checked="checked"/>
+						Female<input type="radio" name="gender"/>
+					</td>
+				</tr>
+				<!--choose your hobbies input field-->
+				<tr>
+					<td>select your hobbies</td>
+					<td>
+						singing<input type="checkbox" />
+						driving<input type="checkbox"/>
+						reading<input type="checkbox"/>
+						watching<input type="checkbox"/>
+					</td>
+					</tr>
+				</tr>
+				<!--select country input field-->
+				<tr>
+					<td>select your country</td>
+					<td>
+						<select>
+						<option>India</option>
+						<option>pakistan</option>
+						<option>Canada</option>
+						<option>U.S.A</option>
+						<option>Russia</option>
+						<option>Australia</option>
+						<option>England</option>
+						<option>Dubai</option>
+						<option>Spain</option>
+						<option>Portugal</option>
+						<option>France</option>
+						</select>
+					</td>
+				</tr>
+				<!--enter DOB input field-->
+				<tr>
+					<td>D.O.B</td>
+					<td>
+						<input type="date" max="2017-03-16" min="1950-01-01"/>
+					</td>
+				</tr>
+				<!--enter time input field-->
+				<tr>
+					<td>Select your time</td>
+					<td>
+						<input type="time"/>
+					</td>
+				</tr>
+				<!--select your month-->
+				<tr>
+					<td>select your month</td>
+					<td>
+						<input type="month" />
+					</td>
+				</tr>
+				<!--enter your week-->
+				<tr>
+					<td>Select your week</td>
+					<td>
+						<input type="week"/>
+					</td>
+				</tr>
+				<!--Submit button-->
+				<tr>
+					
+					<td align="center" colspan="2">
+						<input type="submit" value="Save">
+						<input type="reset" value="Cancel">
+					</td>
+					
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

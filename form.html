@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body>
+	<form method="post" action="output.php">
+	<table border="1">
+	<tr>
+	<th>Enter Your Name</th>
+	<td>
+		<input  type="text" 
+				title="enter your first name" 
+				placeholder="enter your first name" 
+				size="20" 
+				maxlength="20"
+			    type="text" 
+				pattern="[a-z A-Z]*" 
+				required 
+				name="fn" 
+				id="fn1" 
+				/> (*) 
+	</td>
+	
+	</tr>
+	
+	<tr>
+		<th>Enter Your last name</th>
+		<td><input type="text" name="ln"/></td>
+	</tr>
+	
+	<tr>
+		<th>Enter Your email</th>
+		<td><input type="email" name="email"/></td>
+	</tr>
+	
+	<tr>
+		<th>Enter Your Password</th>
+		<td><input type="password" name="passw" pattern="[a-z A-Z 0-9]{8-15}"/></td>
+	</tr>
+	
+	<tr>
+		<th>Enter Your Mobile</th>
+		<td><input type="number" min="0" name="mob"/></td>
+	</tr>
+	
+	<tr>
+		<th>Enter Your website URL</th>
+		<td><input type="url" name="url"/></td>
+	</tr>
+	
+	
+	<tr>
+		<th>Select your favourite color</th>
+		<td><input type="color" name="color"></td>
+	</tr>
+	
+	
+	<tr>
+		<th>Upload Your Profile Pic</th>
+		<td><input type="file"/></td>
+	</tr>
+	
+	<tr>
+		<th>Enter your address</th>
+		<td><textarea cols="25" rows="10"></textarea></td>
+	</tr>
+	
+	<tr>
+		<th>Select Your Gender</th>
+		<td>
+			Male<input name="gen" checked="checked" type="radio"/>
+			Female<input name="gen" type="radio"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th>Choose Your Hobbies</th>
+		<td>
+			Reading<input type="checkbox"/>
+			Singing<input type="checkbox"/>
+			Palying<input type="checkbox"/>
+			Cooking<input type="checkbox"/>
+		</td>
+	</tr>
+	
+	<tr>
+		<th>Select Your Country</th>
+		<td>
+			<select>
+				<option>India</option>
+				<option>China</option>
+				<option>Pakistan</option>
+			</select>
+			
+			
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<th>Select Your DOB</th>
+		<td><input type="date" max="2017-03-16" min="1950-01-01"></td>
+	</tr>
+	
+	<tr>
+		<th>select Your time</th>
+		<td><input type="time"></td>
+	</tr>
+	
+	<tr>
+		<th>select Your Month</th>
+		<td><input type="month"></td>
+	</tr>
+	
+	<tr>
+		<th>select Your Week</th>
+		<td><input type="week"></td>
+	</tr>
+	
+	<tr>
+		<td align="center" colspan="2">
+		<input type="submit" value="save data">
+		<input type="reset" value="Cancel">
+		</td>
+	</tr>
+	
+	</table>
+	</form>
+	</body>
+</html>
